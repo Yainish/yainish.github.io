@@ -3,6 +3,9 @@
 <head>
     <title>Yainish</title>
     <style>
+        #bla {
+            display = none;
+        }
     	* {
           box-sizing: border-box;
         }
@@ -29,15 +32,24 @@
   			justify-content: center;
         }
 
-        .centro_img {
+        .ele_img {
         	border: 2px solid Aquamarine;
             border-radius: 6px;
-            width: 100%;     /* Image takes full width of its container */
+            width: 100%;
   			height: auto;
+  			cursor: pointer;
+        }
+
+        .bla_img {
+            border: 2px solid Gainsboro;
+            border-radius: 6px;
+            width: 100%;
+  			height: auto;
+  			cursor: pointer;
         }
 
         .lado_img {
-            width: 100%;     /* Image takes full width of its container */
+            width: 100%;
   			height: auto;
         }
     </style>
@@ -49,9 +61,13 @@
         </p>
     </div>
     <div class="columna main">
-        <p style="color: Aquamarine; font-size:300%; text-align:center;">
-            <img class="centro_img" src="/assets/imgs/ele_shogun.png" alt="Electric Shogun">
+        <p id="ele" style="color: Aquamarine; font-size:250%; text-align:center;">
+            <img class="ele_img" src="/assets/imgs/ele_shogun.png" alt="Electric Shogun" onclick="blast()">
             ⚡ Electric Shogun ⚡
+        </p>
+        <p id="bla" style="color: Gainsboro; font-size:250%; text-align:center;">
+            <img class="bla_img" src="/assets/imgs/bla_shogun.png" alt="Electric Shogun" onclick="electric()">
+            💥 Shogun Blast 💥
         </p>
     </div>
     <div class="columna lado">
@@ -59,5 +75,17 @@
         <img class="lado_img" src="/assets/imgs/rimi.png" alt="Rimi">
         </p>
     </div>
+
+    <script>
+        function blast() {
+          document.getElementById("ele").style.display = "none";
+          document.getElementById("bla").style.display = "block";
+        }
+
+        function electric() {
+          document.getElementById("ele").style.display = "block";
+          document.getElementById("bla").style.display = "none";
+        }
+	</script>
 </body>
 </html>
