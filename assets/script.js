@@ -36,22 +36,22 @@ function electric() {
         title.textContent = song.name;
         image.src = song.image;
         audio.play();
-        play.display = "none";
-        pause.display = "flex";
+        play.style.display = "none";
+        pause.style.display = "flex";
     }
 
     function cancion_play() {
         if (audio.src) {
             audio.play();
-            play.display = "none";
-            pause.display = "flex";
+            play.style.display = "none";
+            pause.style.display = "flex";
         }
     }
 
     function cancion_pause() {
         audio.pause();
-        pause.display = "none";
-        play.display = "flex";
+        pause.style.display = "none";
+        play.style.display = "flex";
     }
 
     image.addEventListener("click", cancion_random);
