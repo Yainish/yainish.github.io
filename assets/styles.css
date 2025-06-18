@@ -204,8 +204,8 @@
 
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 300px;
-    max-width: 600px;
+    /*flex-basis: 300px;
+    max-width: 600px;*/
 }
 
 .bloque_img {
