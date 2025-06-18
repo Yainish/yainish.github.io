@@ -98,13 +98,12 @@
 
 .centrado {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
-    min-height: 100vh;
-
-    gap: 2rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    gap: 2rem;
+    min-height: 100vh;
 }
 
 .banner {
