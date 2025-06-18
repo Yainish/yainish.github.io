@@ -127,7 +127,7 @@
     flex-shrink: 0;
 }
 
-.name {
+.nombre {
     font-size: 6rem;
     font-weight: 900;
     background-image: url(/assets/imgs/mika_bg.jpg);
@@ -143,4 +143,24 @@
     font-family: 'Quicksand', sans-serif;
     /* backdrop-filter: blur(8px); */
     /* text-shadow: 0 0 8px rgba(255,255,255,0.6); */
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.bloque {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(40, 40, 40, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
 }
