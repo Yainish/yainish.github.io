@@ -88,13 +88,13 @@
 }
 
 .main_bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  background-size: cover;
-  transform: scale(1.05);
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    background-size: cover;
+    transform: scale(1.05);
 }
 
 .centrado {
@@ -151,39 +151,56 @@
 }
 
 .contenido {
-  /*display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 4rem 2rem;*/
+    /*display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;*/
 
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 4rem 2rem;
-  justify-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 4rem 2rem;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .bloque {
-  /*width: 90%;
-  max-width: 800px;*/
-  width: 100%;
-  /* max-width: 350px; */
-  max-width: none;
-  background-color: rgba(40, 40, 40, 0.5);
-  backdrop-filter: blur(4px);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  color: white;
-  font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    max-width: none /* 350px */ /* 800px */;
+    background-color: rgba(40, 40, 40, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+    flex-wrap: wrap;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.bloque_img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.bloque_txt {
+    flex: 1;
+    min-width: 200px;
 }
 
 @media (max-width: 1024px) {
-  .contenido {
-    grid-template-columns: 1fr;
-  }
+    .contenido {
+        grid-template-columns: 1fr;
+    }
 }
