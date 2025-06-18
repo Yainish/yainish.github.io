@@ -168,8 +168,8 @@
 }
 
 .bloque {
-    width: 100%;
-    max-width: 100% /*none*/ /* 350px */ /* 800px */;
+    width: /*100%*/ 350px;
+    max-width: /* 100% */ none /* 350px */ /* 800px */;
     /* min-width: 350px; */
     background-color: rgba(40, 40, 40, 0.5);
     backdrop-filter: blur(4px);
@@ -193,7 +193,7 @@
     width: 120px;
     height: auto;
     object-fit: cover;
-    /* border-radius: 0.5rem; */
+    border-radius: 0.5rem;
     flex-shrink: 0;
 }
 
