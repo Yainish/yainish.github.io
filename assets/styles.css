@@ -123,15 +123,16 @@
     font-size: 6rem;
     font-weight: 900;
     background-image: url(/assets/imgs/mika_bg.jpg);
-    background-size: cover;
+    background-size: /*cover*/ 105% auto;
     background-position: 80% center;
     background-repeat: no-repeat;
     color: transparent;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     filter: brightness(1.8);
     background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
     /* backdrop-filter: blur(8px); */
     /* text-shadow: 0 0 8px rgba(255,255,255,0.6); */
 }
