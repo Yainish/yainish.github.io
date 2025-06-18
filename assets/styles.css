@@ -86,13 +86,22 @@
     background-color: #3C46A8;
 }
 
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .banner {
-    width: 200px;          /* or any size you want */
     height: 200px;
-    overflow: hidden;      /* hides any overflow from the image */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
 }
 
 .pfp {
@@ -100,9 +109,10 @@
     height: auto;
     clip-path: circle(50%);
     object-fit: cover;
-    display: block;
+    /* display: block; */
+    flex-shrink: 0;
 }
 
 .name {
-    font-size: 200%;
+    font-size: 300%;
 }
