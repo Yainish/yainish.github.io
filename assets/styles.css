@@ -170,7 +170,8 @@
   /*width: 90%;
   max-width: 800px;*/
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
+  max-width: none;
   background-color: rgba(40, 40, 40, 0.5);
   backdrop-filter: blur(4px);
   padding: 2rem;
