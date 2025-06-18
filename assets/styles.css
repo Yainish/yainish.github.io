@@ -204,12 +204,13 @@
 
     flex-grow: 1;
     flex-shrink: 1;
-    /*flex-basis: 300px;
-    max-width: 600px;*/
+    flex-basis: 300px;
+    /*max-width: 600px;*/
 }
 
 .bloque.nogrow {
     flex-grow: 0;
+    flex-basis: 0;
 }
 
 .bloque_img {
@@ -228,6 +229,14 @@
     min-width: 0 /* 200px */;
 
     word-wrap: break-word;
+}
+
+audio {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    filter: brightness(1.2);
+    margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {
