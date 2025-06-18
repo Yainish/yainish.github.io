@@ -156,21 +156,34 @@
     gap: 2rem;
     padding: 4rem 2rem;*/
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+
+
     /* grid-template-columns: repeat(3, 1fr); */
     gap: 2rem;
     padding: 4rem 2rem;
-    justify-items: center;
+    /*justify-items: center;*/
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .bloque {
-    width: /*100%*/ 350px;
-    max-width: /* 100% */ none /* 350px */ /* 800px */;
+    
+
+    /* width: 100% 350px;
+    max-width: 100% none 350px 800px; */
     /* min-width: 350px; */
+
+
     background-color: rgba(40, 40, 40, 0.5);
     backdrop-filter: blur(4px);
     padding: 2rem;
@@ -187,6 +200,12 @@
 
     flex-direction: row;
 
+
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    max-width: 600px;
 }
 
 .bloque_img {
