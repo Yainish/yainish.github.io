@@ -183,12 +183,6 @@
 
 @media (max-width: 1024px) {
   .contenido {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
-  }
-}
-
-@media (max-width: 600px) {
-  .contenido {
-    grid-template-columns: 1fr; /* 1 per row on small screens */
+    grid-template-columns: 1fr;
   }
 }
