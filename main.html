@@ -22,12 +22,14 @@
             </div>
 
             <div class="bloque" id="reproductor">
-                <img class="bloque_img" id="cancion_img" src="/assets/imgs/bla_shogun.png" alt="Cover">
+                <img class="bloque_img" id="cancion_img" src="/assets/imgs/bla_shogun.png" alt="Cover" onclick="cancion_random()">
                 <div class="bloque_txt">
                     <h2 id="cancion_name">Random Song</h2>
                     <audio id="audio"></audio>
-                    <h3 id="play">▶</h3>
-                    <h3 id="pause">⏸</h3>
+                    <div class="boton">
+                        <h3 id="play" onclick="cancion_play()">▶</h3>
+                        <h3 id="pause" onclick="cancion_pause()">⏸</h3>
+                    </div>
                 </div>
             </div>
 
