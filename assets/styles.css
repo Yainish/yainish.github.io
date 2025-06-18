@@ -66,10 +66,20 @@
 }
 
 .main_bg {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-image: url(/assets/imgs/mika_bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
+    background-position: 80% center;
+    /* background-attachment: scroll; */
     background-size: cover;
-    height: 100vh;
+    filter: blur(8px);
+    z-index: -1;
 }
