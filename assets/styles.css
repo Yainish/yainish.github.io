@@ -169,7 +169,8 @@
 
 .bloque {
     width: 100%;
-    max-width: none /* 350px */ /* 800px */;
+    max-width: 600px/* none */ /* 350px */ /* 800px */;
+    min-width: 350px;
     background-color: rgba(40, 40, 40, 0.5);
     backdrop-filter: blur(4px);
     padding: 2rem;
