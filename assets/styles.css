@@ -64,3 +64,10 @@
 .caption.bla {
     color: Gainsboro;
 }
+
+.main_bg {
+    background-image: url(/assets/imgs/mika_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
