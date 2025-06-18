@@ -102,6 +102,12 @@
     gap: 1rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
+
+    background-color: rgba(40, 40, 40, 0.5);
+    backdrop-filter: blur(4px);       /* optional frosted-glass effect */
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(40, 40, 40, 0.3);
 }
 
 .pfp {
