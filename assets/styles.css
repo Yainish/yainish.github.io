@@ -91,6 +91,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .banner {
@@ -109,8 +110,8 @@
     height: auto;
     clip-path: circle(50%);
     object-fit: cover;
-    /* display: block; */
-    flex-shrink: 0;
+    display: block;
+    /* flex-shrink: 0; */
 }
 
 .name {
