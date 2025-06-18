@@ -1,6 +1,9 @@
 #bla {
     display: none;
 }
+#pause {
+    display: none;
+}
 * {
     box-sizing: border-box;
 }
@@ -229,14 +232,6 @@
     min-width: 0 /* 200px */;
 
     word-wrap: break-word;
-}
-
-audio {
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
-    filter: brightness(1.2);
-    margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {

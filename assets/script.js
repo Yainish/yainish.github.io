@@ -24,11 +24,13 @@ function electric() {
     const audio = document.getElementById("audio");
     const title = document.getElementById("cancion_name");
     const image = document.getElementById("cancion_img");
-    const random = document.getElementById("cancion_rnd");
+
+    const play = document.getElementById();
+    const pause = document.getElementById();
 
     audio.volume = 0.3;
 
-    function playRandomSong() {
+    function cancion_random() {
         const song = songs[Math.floor(Math.random() * songs.length)];
         audio.src = song.file;
         title.textContent = song.name;
@@ -36,4 +38,20 @@ function electric() {
         audio.play();
     }
 
-    random.addEventListener("click", playRandomSong);
+    function cancion_play() {
+        if (audio.src) {
+            audio.play();
+            play.display = "none";
+            pause.display = "flex";
+        }
+    }
+
+    function cancion_pause() {
+        audio.pause();
+        pause.display = "none";
+        play.display = "flex";
+    }
+
+    image.addEventListener("click", cancion_random);
+    play.addEventListener("click", cancion_play);
+    pause.addEventListener("click", cancion_pause);
