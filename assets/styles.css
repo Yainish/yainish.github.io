@@ -88,9 +88,10 @@
 
 .centrado {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: 40% center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    height: 100vh;
 }
 
 .banner {
@@ -104,7 +105,7 @@
     border-radius: 1rem;
 
     background-color: rgba(40, 40, 40, 0.5);
-    backdrop-filter: blur(4px);       /* optional frosted-glass effect */
+    backdrop-filter: blur(4px);
     border-radius: 1rem;
     padding: 1.5rem 2rem;
     box-shadow: 0 4px 20px rgba(40, 40, 40, 0.3);
@@ -119,6 +120,15 @@
 }
 
 .name {
-    margin: 0 0 0.5rem 0;
     font-size: 3rem;
+    font-weight: 900;
+    background-image: url(/assets/imgs/mika_bg.jpg);
+    background-size: cover;
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: brightness(1.8);
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
 }
