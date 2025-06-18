@@ -100,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
 
@@ -129,6 +129,9 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     filter: brightness(1.8);
+    background-attachment: fixed;
+     backdrop-filter: blur(8px);
     /* text-shadow: 0 0 8px rgba(255,255,255,0.6); */
 }
