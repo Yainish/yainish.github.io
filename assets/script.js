@@ -12,12 +12,12 @@ function electric() {
         {
         name: "Shanghai Alice of Meiji 17",
         file: "/assets/audio/alice.mp3",
-        image: "/assets/imgs/pfp.jpg"
+        image: "/assets/imgs/alice.jpg"
         },
         {
         name: "Satori Maiden ~ 3rd eye",
         file: "/assets/audio/satori.mp3",
-        image: "/assets/imgs/pfp.jpg"
+        image: "/assets/imgs/satori.jpg"
         }
     ];
 
