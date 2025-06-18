@@ -48,9 +48,26 @@
   			cursor: pointer;
         }
 
+        .centro_img {
+            text-align: center;
+            width: 100%;
+        }
+
         .lado_img {
             width: 100%;
   			height: auto;
+        }
+
+        .caption {
+            font-size: 250%;
+        }
+
+        .caption.ele {
+            color: Aquamarine;
+        }
+
+        .caption.bla {
+            color: Gainsboro;
         }
     </style>
 </head>
@@ -61,14 +78,14 @@
         </p>
     </div>
     <div class="columna main">
-        <p id="ele" style="color: Aquamarine; font-size:250%; text-align:center;">
+        <div id="ele" class="centro_img">
             <img class="ele_img" src="/assets/imgs/ele_shogun.png" alt="Electric Shogun" onclick="blast()">
-            ⚡ Electric Shogun ⚡
-        </p>
-        <p id="bla" style="color: Gainsboro; font-size:250%; text-align:center;">
+            <p class="caption ele">⚡ Electric Shogun ⚡</p>
+        </div>
+        <div id="bla" class="centro_img">
             <img class="bla_img" src="/assets/imgs/bla_shogun.png" alt="Electric Shogun" onclick="electric()">
-            💥 Shogun Blast 💥
-        </p>
+            <p class="caption bla">💥 Shogun Blast 💥</p>
+        </div>
     </div>
     <div class="columna lado">
         <p>
