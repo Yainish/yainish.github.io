@@ -87,11 +87,20 @@
 }
 
 .banner {
-    float: left;
+    width: 200px;          /* or any size you want */
+    height: 200px;
+    overflow: hidden;      /* hides any overflow from the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pfp {
+    width: 100%;
+    height: auto;
     clip-path: circle(50%);
+    object-fit: cover;
+    display: block;
 }
 
 .name {
