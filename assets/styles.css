@@ -101,14 +101,12 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
 
-    background-color: rgba(40, 40, 40, 0.5);
+    /*background-color: rgba(40, 40, 40, 0.5);
     backdrop-filter: blur(4px);
-    border-radius: 1rem;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 20px rgba(40, 40, 40, 0.3);
+    box-shadow: 0 4px 20px rgba(40, 40, 40, 0.3);*/
 }
 
 .pfp {
@@ -123,7 +121,7 @@
     font-size: 6rem;
     font-weight: 900;
     background-image: url(/assets/imgs/mika_bg.jpg);
-    background-size: /*cover*/ 105% auto;
+    background-size: cover /* 105% auto */;
     background-position: 80% center;
     background-repeat: no-repeat;
     color: transparent;
