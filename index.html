@@ -2,74 +2,7 @@
 <html lang="es">
 <head>
     <title>Yainish</title>
-    <style>
-        #bla {
-            display: none;
-        }
-    	* {
-          box-sizing: border-box;
-        }
-        .columna {
-            float: left;
-            padding: 10px;
-        }
-
-        .columna.lado {
-            width: 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 1000px;
-        }
-
-        .columna.lado.izq {
-            transform: scaleX(-1);
-        }
-
-        .columna.main {
-            width: 40%;
-            display: flex;
-  			justify-content: center;
-        }
-
-        .ele_img {
-        	border: 2px solid Aquamarine;
-            border-radius: 6px;
-            width: 100%;
-  			height: auto;
-  			cursor: pointer;
-        }
-
-        .bla_img {
-            border: 2px solid Gainsboro;
-            border-radius: 6px;
-            width: 100%;
-  			height: auto;
-  			cursor: pointer;
-        }
-
-        .centro_img {
-            text-align: center;
-            width: 100%;
-        }
-
-        .lado_img {
-            width: 100%;
-  			height: auto;
-        }
-
-        .caption {
-            font-size: 250%;
-        }
-
-        .caption.ele {
-            color: Aquamarine;
-        }
-
-        .caption.bla {
-            color: Gainsboro;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body style="background-color:#101010;">
     <div class="columna lado izq">
@@ -93,16 +26,6 @@
         </p>
     </div>
 
-    <script>
-        function blast() {
-          document.getElementById("ele").style.display = "none";
-          document.getElementById("bla").style.display = "block";
-        }
-
-        function electric() {
-          document.getElementById("ele").style.display = "block";
-          document.getElementById("bla").style.display = "none";
-        }
-	</script>
+    <script src="/assets/script.js"> </script>
 </body>
 </html>

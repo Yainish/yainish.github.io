@@ -1,0 +1,66 @@
+#bla {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+}
+.columna {
+    float: left;
+    padding: 10px;
+}
+
+.columna.lado {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.columna.lado.izq {
+    transform: scaleX(-1);
+}
+
+.columna.main {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.ele_img {
+    border: 2px solid Aquamarine;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.bla_img {
+    border: 2px solid Gainsboro;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.centro_img {
+    text-align: center;
+    width: 100%;
+}
+
+.lado_img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-size: 250%;
+}
+
+.caption.ele {
+    color: Aquamarine;
+}
+
+.caption.bla {
+    color: Gainsboro;
+}
