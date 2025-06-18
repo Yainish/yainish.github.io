@@ -102,6 +102,9 @@
     align-items: flex-start;
     padding-top: 2rem;
     height: 100vh;
+
+    gap: 2rem;
+    flex-direction: column;
 }
 
 .banner {
