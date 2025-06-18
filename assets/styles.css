@@ -88,7 +88,7 @@
 
 .centrado {
     display: flex;
-    justify-content: 40% center;
+    justify-content: center;
     align-items: flex-start;
     padding-top: 2rem;
     height: 100vh;
@@ -130,5 +130,5 @@
     background-clip: text;
     -webkit-background-clip: text;
     filter: brightness(1.8);
-    text-shadow: 0 0 8px rgba(255,255,255,0.6);
+    /* text-shadow: 0 0 8px rgba(255,255,255,0.6); */
 }
