@@ -25,8 +25,8 @@ function electric() {
     const title = document.getElementById("cancion_name");
     const image = document.getElementById("cancion_img");
 
-    const play = document.getElementById();
-    const pause = document.getElementById();
+    const play = document.getElementById("play");
+    const pause = document.getElementById("pause");
 
     audio.volume = 0.1;
 
@@ -54,6 +54,6 @@ function electric() {
         play.style.display = "flex";
     }
 
-    image.addEventListener("click", cancion_random);
+    /*image.addEventListener("click", cancion_random);
     play.addEventListener("click", cancion_play);
-    pause.addEventListener("click", cancion_pause);
+    pause.addEventListener("click", cancion_pause);*/
