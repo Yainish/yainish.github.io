@@ -28,7 +28,7 @@ function electric() {
     const play = document.getElementById();
     const pause = document.getElementById();
 
-    audio.volume = 0.3;
+    audio.volume = 0.1;
 
     function cancion_random() {
         const song = songs[Math.floor(Math.random() * songs.length)];
@@ -36,6 +36,8 @@ function electric() {
         title.textContent = song.name;
         image.src = song.image;
         audio.play();
+        play.display = "none";
+        pause.display = "flex";
     }
 
     function cancion_play() {
