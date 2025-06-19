@@ -43,16 +43,16 @@ function display_play() {
     play.style.display = "flex";
     pause.style.display = "none";
 
-    document.getElementById("arisu_off") = "flex";
-    document.getElementById("arisu_on") = "none";
+    document.getElementById("arisu_off").style.display = "flex";
+    document.getElementById("arisu_on").style.display = "none";
 }
 
 function display_pause() {
     play.style.display = "none";
     pause.style.display = "flex";
 
-    document.getElementById("arisu_off") = "none";
-    document.getElementById("arisu_on") = "flex";
+    document.getElementById("arisu_off").style.display = "none";
+    document.getElementById("arisu_on").style.display = "flex";
 }
 
 function cancion_play() {
