@@ -232,6 +232,8 @@
     min-width: 0 /* 200px */;
 
     word-wrap: break-word;
+
+    padding-top: 0.5rem;
 }
 
 .cancion_boton {
