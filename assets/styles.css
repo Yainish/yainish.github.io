@@ -222,6 +222,28 @@
     flex-basis: 0;
 }
 
+.bloque_hidden {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    flex-direction: row;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.bloque_hidden.nogrow {
+    flex-grow: 0;
+    flex-basis: 0;
+}
+
 .bloque_img {
     width: 120px;
     height: auto;
@@ -261,14 +283,6 @@
 
 .boton_img {
     width: 30px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    flex-shrink: 0;
-}
-
-.arisu {
-    width: 20px;
     height: auto;
     object-fit: cover;
     border-radius: 0.5rem;
