@@ -89,12 +89,12 @@
     background-position: 80% center;
     background-attachment: fixed /*scroll*/;
     background-size: cover;
-    filter: blur(8px);
+    /*filter: blur(8px);*/
     z-index: -1;
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
     background-color: #3C46A8;
 
-    will-change: transform, filter;
+    /*will-change: transform, filter;*/
 }
 
 .main_bg::after {
@@ -146,7 +146,7 @@
     font-size: 6rem;
     font-weight: 900;
     background-image: url(/assets/imgs/mika_bg.jpg);
-    background-size: /* cover */ 105% auto;
+    background-size: cover /*105% auto*/;
     background-position: 80% center;
     background-repeat: no-repeat;
     color: transparent;
