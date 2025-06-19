@@ -57,6 +57,8 @@ function cancion_pause() {
 }
 
 document.addEventListener("keydown", function(e) {
+    console.log("Key pressed:", e.code);
+
     switch(e.code) {
         case "MediaPlayPause":
             e.preventDefault();
@@ -64,6 +66,8 @@ document.addEventListener("keydown", function(e) {
                 cancion_pause();
             else
                 cancion_play();
-        break;
+            break;
+        case "MediaStop":
+            cancion_pause();
     }
 });
