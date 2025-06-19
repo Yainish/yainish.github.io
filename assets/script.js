@@ -36,24 +36,29 @@ function cancion_random() {
     title.textContent = song.name;
     image.src = song.image;
     audio.play();
-    play.style.display = "none";
-    pause.style.display = "flex";
+    //display_pause();
 }
 
 function display_play() {
     play.style.display = "flex";
     pause.style.display = "none";
+
+    document.getElementById("arisu_off") = "flex";
+    document.getElementById("arisu_on") = "none";
 }
 
 function display_pause() {
     play.style.display = "none";
     pause.style.display = "flex";
+
+    document.getElementById("arisu_off") = "none";
+    document.getElementById("arisu_on") = "flex";
 }
 
 function cancion_play() {
     if (audio.src) {
         audio.play();
-        display_pause();
+        //display_pause();
     }
     else
         cancion_random();
@@ -61,7 +66,7 @@ function cancion_play() {
 
 function cancion_pause() {
     audio.pause();
-    display_play();
+    //display_play();
 }
 
 audio.addEventListener("play", display_pause);

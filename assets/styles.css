@@ -4,6 +4,9 @@
 #pause {
     display: none;
 }
+#arisu_on {
+    display: none;
+}
 * {
     box-sizing: border-box;
 }
@@ -258,6 +261,14 @@
 
 .boton_img {
     width: 30px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
+.arisu {
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 0.5rem;
