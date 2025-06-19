@@ -40,11 +40,20 @@ function cancion_random() {
     pause.style.display = "flex";
 }
 
+function display_play() {
+    play.style.display = "flex";
+    pause.style.display = "none";
+}
+
+function display_pause() {
+    play.style.display = "none";
+    pause.style.display = "flex";
+}
+
 function cancion_play() {
     if (audio.src) {
         audio.play();
-        play.style.display = "none";
-        pause.style.display = "flex";
+        display_pause();
     }
     else
         cancion_random();
@@ -52,18 +61,9 @@ function cancion_play() {
 
 function cancion_pause() {
     audio.pause();
-    pause.style.display = "none";
-    play.style.display = "flex";
+    display_play();
 }
 
-audio.addEventListener("play", () => {
-    console.log("Play");
-    play.style.display = "none";
-    pause.style.display = "flex";
-});
+audio.addEventListener("play", display_pause());
 
-audio.addEventListener("pause", () => {
-    console.log("Pause");
-    play.style.display = "flex";
-    pause.style.display = "none";
-});
+audio.addEventListener("pause", display_play());
