@@ -89,8 +89,8 @@ html {
     height: 100vh;
     position: relative;
     overflow-x: hidden;
-    overflow-y: visible;
-    /* overflow-y: auto; */
+    overflow-y: auto;
+    /* overflow-y: visible; */
 }
 
 .main_bg::before {
