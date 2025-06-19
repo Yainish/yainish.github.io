@@ -15,7 +15,6 @@
 }
 
 html {
-  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
@@ -298,6 +297,10 @@ html {
 }
 
 @media (max-width: 1024px) {
+    .main_bg::before {
+        background-attachment: scroll;
+    }
+    
     .contenido {
         grid-template-columns: 1fr;
     }
