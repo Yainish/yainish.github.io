@@ -15,6 +15,7 @@
 }
 
 html {
+  /*-ms-overflow-style: none;*/
   scrollbar-width: none;
 }
 
@@ -111,7 +112,7 @@ html {
 
 .main_bg::after {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: -1;
@@ -297,6 +298,11 @@ html {
 }
 
 @media (max-width: 1024px) {
+    .main_bg {
+        min-height: 100dvh;
+        height: auto;
+    }
+
     .main_bg::before {
         background-attachment: scroll;
     }
