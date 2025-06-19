@@ -73,8 +73,8 @@
 
 .main_bg {
     min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
+    /*position: relative;
+    overflow-x: hidden;*/
     /* overflow-y: auto; */
 }
 
