@@ -234,8 +234,10 @@
     word-wrap: break-word;
 }
 
-.bloque_txt.boton {
+.cancion_boton {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {

@@ -55,7 +55,3 @@ function electric() {
         pause.style.display = "none";
         play.style.display = "flex";
     }
-
-    image.addEventListener("click", cancion_random);
-    play.addEventListener("click", cancion_play);
-    pause.addEventListener("click", cancion_pause);
