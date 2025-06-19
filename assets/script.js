@@ -46,6 +46,8 @@ function electric() {
             play.style.display = "none";
             pause.style.display = "flex";
         }
+        else
+            cancion_random();
     }
 
     function cancion_pause() {
@@ -54,6 +56,6 @@ function electric() {
         play.style.display = "flex";
     }
 
-    /*image.addEventListener("click", cancion_random);
+    image.addEventListener("click", cancion_random);
     play.addEventListener("click", cancion_play);
-    pause.addEventListener("click", cancion_pause);*/
+    pause.addEventListener("click", cancion_pause);

@@ -234,8 +234,7 @@
     word-wrap: break-word;
 }
 
-.bloque_txt boton {
-    text-align: center;
+.bloque_txt.boton {
     justify-content: center;
 }
 
