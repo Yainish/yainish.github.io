@@ -197,7 +197,7 @@
     /* flex-wrap: wrap; */
 
     display: flex;
-    align-items: flex-start /* center */;
+    align-items: center /* flex-start */;
     gap: 1.5rem;
 
     flex-direction: row;
@@ -241,6 +241,7 @@
 
 .bloque_txt.boton {
     align-items: center;
+    padding-right: 0.5rem;
 }
 
 .cancion_boton {
