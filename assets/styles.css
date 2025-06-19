@@ -235,6 +235,14 @@
     
 }
 
+.bloque_txt.titulo {
+    min-width: 200px;
+}
+
+.bloque_txt.boton {
+    align-items: center;
+}
+
 .cancion_boton {
     display: flex;
     justify-content: center;
