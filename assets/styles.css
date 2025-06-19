@@ -85,7 +85,7 @@
     background-image: url(/assets/imgs/mika_bg.jpg);
     background-repeat: no-repeat;
     background-position: 80% center;
-    /* background-attachment: scroll; */
+    background-attachment: fixed /*scroll*/;
     background-size: cover;
     filter: blur(8px);
     z-index: -1;
@@ -154,11 +154,6 @@
     font-family: 'Quicksand', sans-serif;
     /* backdrop-filter: blur(8px); */
     /* text-shadow: 0 0 8px rgba(255,255,255,0.6); */
-
-    position: absolute;
-    inset: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .contenido {
