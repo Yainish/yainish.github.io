@@ -246,6 +246,7 @@
 .bloque_txt.boton {
     align-items: center;
     padding-right: 0.5rem;
+    gap: 1rem;
 }
 
 .cancion_boton {
