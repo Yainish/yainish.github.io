@@ -64,6 +64,6 @@ function cancion_pause() {
     display_play();
 }
 
-audio.addEventListener("play", display_pause());
+audio.addEventListener("play", display_pause);
 
-audio.addEventListener("pause", display_play());
+audio.addEventListener("pause", display_play);
