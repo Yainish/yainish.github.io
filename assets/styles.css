@@ -255,6 +255,14 @@
     cursor: pointer;
 }
 
+.boton_img {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+}
+
 @media (max-width: 1024px) {
     .contenido {
         grid-template-columns: 1fr;
