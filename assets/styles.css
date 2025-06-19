@@ -174,14 +174,15 @@ html {
 }
 
 .contenido {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    /* align-items: center; */
-    /*justify-items: center;*/
+    justify-content: flex-start;*/
 
-    /*display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/ /* repeat(3, 1fr); */
+    align-items: center;
+    justify-items: center;
+
+    display: grid;
+    grid-template-columns: /*repeat(auto-fit, minmax(300px, 1fr));*/ repeat(3, 1fr);
 
     gap: 2rem;
     padding: 4rem 2rem;
