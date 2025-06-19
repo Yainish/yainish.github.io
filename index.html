@@ -14,10 +14,9 @@
 
         <div class="contenido_flex">
             <div class="bloque">
-                <img class="bloque_img" src="/assets/imgs/placeholder.png" alt="Placeholder"> 
-                <div class="bloque_txt">
-                    <h2>Test1</h2>
-                    <p>Placeholder pic</p>
+                <img class="bloque_img clickable" src="/assets/imgs/placeholder.png" alt="Patchouli" onclick="grid1_switch()"> 
+                <div class="bloque_txt clickable">
+                    <h2 onclick="grid1_switch()">Patchouli's Library</h2>
                 </div>
             </div>
 
@@ -45,19 +44,30 @@
                 </div>
             </div>
 
-            <div class="bloque nogrow">
-                <img class="bloque_img" src="/assets/imgs/placeholder.png" alt="Placeholder"> 
+            <div class="bloque_hidden nogrow">
+                <div class="bloque_txt">
+                    <img class="bloque_img" id="arisu_on" src="/assets/imgs/toki.gif" alt="Toki"> 
+                    <img class="bloque_img" id="arisu_off" src="/assets/imgs/toki_f1.png" alt="Toki">
+                </div>
             </div>
 
             <div class="bloque">
+                <img class="bloque_img" src="/assets/imgs/placeholder.png" alt="placeholder">
                 <div class="bloque_txt">
-                    <h2>Test5</h2>
-                    <p>Test</p>
+                    <h2>placeholder</h2>
+                    <p>placeholder</p>
+                </div>
+            </div>
+
+            <div class="bloque nogrow">
+                <img class="bloque_img" src="/assets/imgs/placeholder.png" alt="placeholder">
+                <div class="bloque_txt">
+                    <h2>Other</h2>
                 </div>
             </div>
         </div>
 
-        <div class="contenido_grid">
+        <div class="contenido_grid" id="grid1">
             <div class="bloque">
                 <div class="bloque_txt">
                     <h2>Thing1</h2>

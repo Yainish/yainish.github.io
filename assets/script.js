@@ -72,3 +72,13 @@ function cancion_pause() {
 audio.addEventListener("play", display_pause);
 
 audio.addEventListener("pause", display_play);
+
+function grid1_switch() {
+    const grid = document.getElementById("grid1");
+    if (window.getComputedStyle(grid).display === "none") {
+        grid.style.display = "grid";
+        //disable other grids
+    }
+    else
+        grid.style.display = "none";
+}

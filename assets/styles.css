@@ -10,6 +10,10 @@
     display: none;
 }
 
+#grid1 {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -271,6 +275,10 @@ html {
     flex-shrink: 0;
 }
 
+.bloque_img.clickable {
+    cursor: pointer;
+}
+
 .bloque_txt {
     flex: 1;
     display: flex;
@@ -291,6 +299,10 @@ html {
     align-items: center;
     padding-right: 0.5rem;
     gap: 1rem;
+}
+
+.bloque_txt.clickable {
+    cursor: pointer;
 }
 
 .cancion_boton {
