@@ -36,17 +36,15 @@ function electric() {
         title.textContent = song.name;
         image.src = song.image;
         audio.play();
-        /* play.style.display = "none";
-        pause.style.display = "flex"; */
-        play.style.visibility = "hidden";
-        pause.style.visibility = "visible";
+        play.style.display = "none";
+        pause.style.display = "flex";
     }
 
     function cancion_play() {
         if (audio.src) {
             audio.play();
-            play.style.visibility = "hidden";
-            pause.style.visibility = "visible";
+            play.style.display = "none";
+            pause.style.display = "flex";
         }
         else
             cancion_random();
@@ -54,6 +52,6 @@ function electric() {
 
     function cancion_pause() {
         audio.pause();
-        play.style.visibility = "visible";
-        pause.style.visibility = "hidden";
+        pause.style.display = "none";
+        play.style.display = "flex";
     }
