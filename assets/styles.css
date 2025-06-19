@@ -2,8 +2,7 @@
     display: none;
 }
 #pause {
-    /* display: none; */
-    visibility: hidden;
+    display: none;
 }
 * {
     box-sizing: border-box;
