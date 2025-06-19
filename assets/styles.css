@@ -73,14 +73,16 @@
 
 .main_bg {
     min-height: 100vh;
-    /*position: relative;
-    overflow-x: hidden;*/
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
     /* overflow-y: auto; */
 }
 
 .main_bg::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-image: url(/assets/imgs/mika_bg.jpg);
     background-repeat: no-repeat;
