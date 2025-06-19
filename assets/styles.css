@@ -210,6 +210,10 @@
     /*max-width: 600px;*/
 }
 
+.bloque.reproductor {
+    gap: 0;
+}
+
 .bloque.nogrow {
     flex-grow: 0;
     flex-basis: 0;
@@ -231,12 +235,12 @@
     min-width: 0 /* 200px */;
 
     word-wrap: break-word;
-
-    
 }
 
 .bloque_txt.titulo {
     min-width: 200px;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 .bloque_txt.boton {
