@@ -181,7 +181,6 @@
 
 .bloque {
     
-
     /* width: 100% 350px;
     max-width: 100% none 350px 800px; */
     /* min-width: 350px; */
@@ -211,10 +210,6 @@
     /*max-width: 600px;*/
 }
 
-.bloque.reproductor {
-    padding: 0 1.2rem 0 0;
-}
-
 .bloque.nogrow {
     flex-grow: 0;
     flex-basis: 0;
@@ -228,10 +223,6 @@
     flex-shrink: 0;
 }
 
-.bloque_img.reproductor {
-    padding: 1.2rem
-}
-
 .bloque_txt {
     flex: 1;
     display: flex;
@@ -242,10 +233,6 @@
     word-wrap: break-word;
 
     
-}
-
-.bloque_txt.reproductor {
-    padding: 0.5rem 0 0 0; /* top right bottom left */
 }
 
 .cancion_boton {
