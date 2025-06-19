@@ -56,18 +56,14 @@ function cancion_pause() {
     play.style.display = "flex";
 }
 
-document.addEventListener("keydown", function(e) {
-    console.log("Key pressed:", e.code);
+audio.addEventListener("play", () => {
+    console.log("Play");
+    play.style.display = "none";
+    pause.style.display = "flex";
+});
 
-    switch(e.code) {
-        case "MediaPlayPause":
-            e.preventDefault();
-            if (!audio.paused)
-                cancion_pause();
-            else
-                cancion_play();
-            break;
-        case "MediaStop":
-            cancion_pause();
-    }
+audio.addEventListener("pause", () => {
+    console.log("Pause");
+    play.style.display = "flex";
+    pause.style.display = "none";
 });
