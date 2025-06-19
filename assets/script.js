@@ -55,3 +55,15 @@ function cancion_pause() {
     pause.style.display = "none";
     play.style.display = "flex";
 }
+
+document.addEventListener("keydown", function(e) {
+    switch(e.code) {
+        case "MediaPlayPause":
+            e.preventDefault();
+            if (!audio.paused)
+                cancion_pause();
+            else
+                cancion_play();
+        break;
+    }
+});
