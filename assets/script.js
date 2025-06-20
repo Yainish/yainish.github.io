@@ -30,8 +30,13 @@ const pause = document.getElementById("pause");
 
 audio.volume = 0.1;
 
+let previousSong = "";
+
 function cancion_random() {
     const song = songs[Math.floor(Math.random() * songs.length)];
+    while (song === previousSong)
+        song = songs[Math.floor(Math.random() * songs.length)];
+    previousSong = song;
     audio.src = song.file;
     title.textContent = song.name;
     image.src = song.image;
