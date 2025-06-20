@@ -367,6 +367,10 @@ html {
 @media (max-width: 1024px) {
     .contenido_flex {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bloque {
+        width: 100%;
     }
 }
