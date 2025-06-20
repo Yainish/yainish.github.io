@@ -348,6 +348,11 @@ html {
     flex-shrink: 0;
 }
 
+.nomargin_updown {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /*
 @media (max-width: 1024px) {
     .main_bg {

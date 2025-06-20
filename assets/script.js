@@ -134,7 +134,10 @@ fetch('/assets/kanji.json')
     const kanjiData = data[kanjiChar];
 
     document.getElementById("kanji").innerText = "Kanji of the day: " + kanjiChar;
-    document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
-    document.getElementById("onyomi").innerText = "Onyomi" + toKatakana(kanjiData.readings_on.join(", "));
-    document.getElementById("kunyomi").innerText = "Kunyomi" + kanjiData.readings_kun.join(", ");
+    if (!(kanjiData.meanings.length === 0))
+        document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
+    if (!(kanjiData.readings_on.length === 0))
+        document.getElementById("onyomi").innerText = "Onyomi: " + toKatakana(kanjiData.readings_on.join(", "));
+    if (!(kanjiData.readings_kun.length === 0))
+        document.getElementById("kunyomi").innerText = "Kunyomi: " + kanjiData.readings_kun.join(", ");
 });
