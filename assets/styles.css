@@ -347,6 +347,7 @@ html {
     border-radius: 0.5rem;
     flex-shrink: 0;
 }
+
 /*
 @media (max-width: 1024px) {
     .main_bg {
@@ -362,3 +363,10 @@ html {
         grid-template-columns: 1fr;
     }
 }*/
+
+@media (max-width: 1024px) {
+    .contenido_flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
