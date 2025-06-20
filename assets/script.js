@@ -30,7 +30,7 @@ const pause = document.getElementById("pause");
 
 audio.volume = 0.1;
 
-let previousSong = "";
+var previousSong = "";
 
 function cancion_random() {
     const song = songs[Math.floor(Math.random() * songs.length)];
