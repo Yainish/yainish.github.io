@@ -340,10 +340,6 @@ html {
     cursor: pointer;
 }
 
-.cancion_boton.bigger {
-    font-size: 250%;
-}
-
 .boton_img {
     width: 30px;
     height: auto;
