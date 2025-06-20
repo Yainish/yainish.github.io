@@ -276,6 +276,10 @@ html {
     flex-basis: auto;
 }
 
+.bloque_hidden.column {
+    flex-direction: column;
+}
+
 .bloque_hidden_nosides {
     padding: 1.2rem 0;
     color: white;
