@@ -371,6 +371,15 @@ html {
     margin-bottom: 0;
 }
 
+.todayskanji {
+    margin-block-end: 0.5rem;
+}
+
+.kanjitext {
+    margin-block-start: 0;
+    font-size: 250%;
+}
+
 /*
 @media (max-width: 1024px) {
     .main_bg {
