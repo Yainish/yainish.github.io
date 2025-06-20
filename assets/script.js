@@ -83,9 +83,10 @@ function cancion_pause() {
 function cancion_stop() {
     audio.pause();
     display_play();
-    audio.src = "";
+    audio.removeAttribute('src');
     title.textContent = "Koishi's Music Player";
     image.src = "/assets/imgs/koishi.png";
+    previousSong = "";
 }
 
 audio.addEventListener("play", display_pause);
@@ -147,6 +148,7 @@ fetch('/assets/kanji.json')
     const kanjiData = data[kanjiChar];
 
     document.getElementById("kanji").innerText = kanjiChar;
+    document.getElementById("kanjilink").href += kanjiChar;
     if (!(kanjiData.meanings.length === 0))
         document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
     if (!(kanjiData.readings_on.length === 0))

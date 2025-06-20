@@ -378,6 +378,7 @@ html {
 .kanjitext {
     margin-block-start: 0;
     font-size: 250%;
+    text-decoration: none;
 }
 
 /*
