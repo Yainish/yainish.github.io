@@ -270,6 +270,12 @@ html {
     flex-basis: 0;
 }
 
+.bloque_hidden.nogrow.nopadding {
+    padding: 0;
+    gap: 0;
+    flex-basis: auto;
+}
+
 .bloque_hidden_nosides {
     padding: 1.2rem 0;
     color: white;
