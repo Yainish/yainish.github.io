@@ -133,7 +133,7 @@ fetch('/assets/kanji.json')
     const kanjiChar = keys[index];
     const kanjiData = data[kanjiChar];
 
-    document.getElementById("kanji").innerText = "Kanji of the day: " + kanjiChar;
+    document.getElementById("kanji").innerText = kanjiChar;
     if (!(kanjiData.meanings.length === 0))
         document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
     if (!(kanjiData.readings_on.length === 0))
