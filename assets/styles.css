@@ -325,6 +325,10 @@ html {
     width: 150px;
 }
 
+.bloque_img.kanji {
+    padding: 19.19px 0
+}
+
 .bloque_txt {
     flex: 1;
     display: flex;
