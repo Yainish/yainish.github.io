@@ -148,7 +148,6 @@ fetch('/assets/kanji.json')
     const kanjiData = data[kanjiChar];
 
     document.getElementById("kanji").innerText = kanjiChar;
-    document.getElementById("kanjilink").href += kanjiChar;
     if (!(kanjiData.meanings.length === 0))
         document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
     if (!(kanjiData.readings_on.length === 0))
