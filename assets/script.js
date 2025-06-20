@@ -91,30 +91,39 @@ function grid1_switch() {
 
 
 function xmur3(str) {
-  for (var i = 0, h = 1779033703 ^ str.length; i < str.length; i++)
-    h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
-  return function () {
-    h = Math.imul(h ^ (h >>> 16), 2246822507);
-    h = Math.imul(h ^ (h >>> 13), 3266489909);
-    return (h ^= h >>> 16) >>> 0;
-  };
+    for (var i = 0, h = 1779033703 ^ str.length; i < str.length; i++)
+        h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
+    return function () {
+        h = Math.imul(h ^ (h >>> 16), 2246822507);
+        h = Math.imul(h ^ (h >>> 13), 3266489909);
+        return (h ^= h >>> 16) >>> 0;
+    };
 }
 
 function mulberry32(seed) {
-  return function () {
-    seed |= 0;
-    seed = (seed + 0x6d2b79f5) | 0;
-    var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
+    return function () {
+        seed |= 0;
+        seed = (seed + 0x6d2b79f5) | 0;
+        var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+function toKatakana(hiragana) {
+    let katakana = ''
+    for (let i = 0; i < hiragana.length; i++) {
+        if (hiragana[i] === ',' || hiragana[i] === ' ')
+            katakana += hiragana[i];
+        else
+            katakana += String.fromCharCode(hiragana[i].charCodeAt(0)+96)
+    }
+    return katakana;
 }
 
 const today = new Date().toISOString().split('T')[0];
 const seed = xmur3(today);
 const rand = mulberry32(seed());
-
-console.log(rand());
 
 fetch('/assets/kanji.json')
     .then(res => res.json())
@@ -124,14 +133,8 @@ fetch('/assets/kanji.json')
     const kanjiChar = keys[index];
     const kanjiData = data[kanjiChar];
 
-    console.log(data.length);
-    console.log(index);
-    console.log(kanjiChar);
-
-    /*
-    document.getElementById("kanji").innerText = kanjiChar;
-    document.getElementById("meaning").innerText = kanjiData.meanings.join(", ");
-    document.getElementById("onyomi").innerText = kanjiData.readings_on.join(", ");
-    document.getElementById("kunyomi").innerText = kanjiData.readings_kun.join(", ");
-    */
+    document.getElementById("kanji").innerText = "Kanji of the day: " + kanjiChar;
+    document.getElementById("meaning").innerText = "Meaning: " + kanjiData.meanings.join(", ");
+    document.getElementById("onyomi").innerText = "Onyomi" + toKatakana(kanjiData.readings_on.join(", "));
+    document.getElementById("kunyomi").innerText = "Kunyomi" + kanjiData.readings_kun.join(", ");
 });
