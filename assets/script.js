@@ -82,9 +82,10 @@ function cancion_pause() {
 
 function cancion_stop() {
     audio.pause();
+    display_play();
     audio.src = "";
     title.textContent = "Koishi's Music Player";
-    image.textContent = "/assets/imgs/koishi.png";
+    image.src = "/assets/imgs/koishi.png";
 }
 
 audio.addEventListener("play", display_pause);
@@ -133,7 +134,7 @@ function toKatakana(hiragana) {
     return katakana;
 }
 
-const today = new Date().toISOString().split('T')[0];
+const today = new Date().toLocaleDateString().split('T')[0];
 const seed = xmur3(today);
 const rand = mulberry32(seed());
 
