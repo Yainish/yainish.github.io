@@ -80,6 +80,13 @@ function cancion_pause() {
     //display_play();
 }
 
+function cancion_stop() {
+    audio.pause();
+    audio.src = "";
+    title.textContent = "Koishi's Music Player";
+    image.textContent = "/assets/imgs/koishi.png";
+}
+
 audio.addEventListener("play", display_pause);
 audio.addEventListener("pause", display_play);
 audio.addEventListener("ended", cancion_random);
