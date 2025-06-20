@@ -243,7 +243,7 @@ html {
 .bloque.kanji {
     padding: 0 1.2rem;
     gap: 2rem;
-    /*height: 158.38px;*/
+    min-height: 158.38px;
 }
 
 .bloque.reproductor {
@@ -313,7 +313,7 @@ html {
     width: 120px;
     height: auto;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     flex-shrink: 0;
 }
 
@@ -323,10 +323,6 @@ html {
 
 .bloque_img.toki {
     width: 150px;
-}
-
-.bloque_img.kanji {
-    padding: 19.19px 0
 }
 
 .bloque_txt {
