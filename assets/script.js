@@ -45,6 +45,9 @@ function display_play() {
 
     document.getElementById("arisu_off").style.display = "flex";
     document.getElementById("arisu_on").style.display = "none";
+
+    document.getElementById("toki_off").style.display = "flex";
+    document.getElementById("toki_on").style.display = "none";
 }
 
 function display_pause() {
@@ -53,6 +56,9 @@ function display_pause() {
 
     document.getElementById("arisu_off").style.display = "none";
     document.getElementById("arisu_on").style.display = "flex";
+
+    document.getElementById("toki_off").style.display = "none";
+    document.getElementById("toki_on").style.display = "flex";
 }
 
 function cancion_play() {

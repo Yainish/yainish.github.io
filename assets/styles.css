@@ -10,6 +10,10 @@
     display: none;
 }
 
+#toki_on {
+    display: none;
+}
+
 #grid1 {
     display: none;
 }
@@ -247,7 +251,6 @@ html {
 
 .bloque_hidden {
     padding: 1.2rem;
-    border-radius: 1rem;
     color: white;
     font-family: 'Quicksand', sans-serif;
 
@@ -277,6 +280,10 @@ html {
 
 .bloque_img.clickable {
     cursor: pointer;
+}
+
+.bloque_img.toki {
+    width: 150px;
 }
 
 .bloque_txt {
