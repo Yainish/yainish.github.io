@@ -76,8 +76,8 @@ function cancion_pause() {
 }
 
 audio.addEventListener("play", display_pause);
-
 audio.addEventListener("pause", display_play);
+audio.addEventListener("ended", cancion_random);
 
 function grid1_switch() {
     const grid = document.getElementById("grid1");
