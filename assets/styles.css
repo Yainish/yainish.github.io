@@ -270,6 +270,27 @@ html {
     flex-basis: 0;
 }
 
+.bloque_hidden_nosides {
+    padding: 1.2rem 0;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    flex-direction: row;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+}
+
+.bloque_hidden_nosides.nogrow {
+    flex-grow: 0;
+    flex-basis: 0;
+}
+
 .bloque_img {
     width: 120px;
     height: auto;
