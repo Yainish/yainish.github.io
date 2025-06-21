@@ -94,15 +94,33 @@ audio.addEventListener("pause", display_play);
 audio.addEventListener("ended", cancion_random);
 
 function grid1_switch() {
-    const grid = document.getElementById("grid1");
-    if (window.getComputedStyle(grid).display === "none") {
+    const grid1 = document.getElementById("grid1");
+    if (!(grid1.classList.contains("display"))) {
+        grid1.classList.add("display");
+        document.getElementById("grid2").classList.remove("display");
+    }
+    else
+        grid1.classList.remove("display");
+    
+    /*grid.classList.toggle("display");*/
+
+    /*if (window.getComputedStyle(grid).display === "none") {
         grid.style.display = "grid";
         //disable other grids
     }
     else
-        grid.style.display = "none";
+        grid.style.display = "none";*/
 }
 
+function grid2_switch() {
+    const grid2 = document.getElementById("grid2");
+    if (!(grid2.classList.contains("display"))) {
+        grid2.classList.add("display");
+        document.getElementById("grid1").classList.remove("display");
+    }
+    else
+        grid2.classList.remove("display");
+}
 
 function xmur3(str) {
     for (var i = 0, h = 1779033703 ^ str.length; i < str.length; i++)
