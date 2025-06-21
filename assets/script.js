@@ -11,13 +11,13 @@ function electric() {
 const songs = [
     {
     name: "Shanghai Alice of Meiji 17",
-    file: "/assets/audio/alice.mp3",
-    image: "/assets/imgs/zmc1.jpg"
+    file: "./assets/audio/alice.mp3",
+    image: "./assets/imgs/zmc1.jpg"
     },
     {
     name: "Satori Maiden ~ 3rd eye",
-    file: "/assets/audio/satori.mp3",
-    image: "/assets/imgs/th11.jpg"
+    file: "./assets/audio/satori.mp3",
+    image: "./assets/imgs/th11.jpg"
     }
 ];
 
@@ -139,7 +139,7 @@ const today = new Date().toLocaleDateString().split('T')[0];
 const seed = xmur3(today);
 const rand = mulberry32(seed());
 
-fetch('/assets/kanji.json')
+fetch('./assets/kanji.json')
     .then(res => res.json())
     .then(data => {
     const keys = Object.keys(data);
