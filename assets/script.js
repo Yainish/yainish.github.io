@@ -84,8 +84,8 @@ function cancion_stop() {
     audio.pause();
     display_play();
     audio.removeAttribute('src');
-    title.textContent = "Koishi's Music Player";
-    image.src = "/assets/imgs/koishi.png";
+    title.textContent = "Hecatia's Music Player";
+    image.src = "./assets/imgs/hecatia.jpg";
     previousSong = "";
 }
 
