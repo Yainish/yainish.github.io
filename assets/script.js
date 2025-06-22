@@ -157,7 +157,7 @@ const today = new Date().toLocaleDateString().split('T')[0];
 const seed = xmur3(today);
 const rand = mulberry32(seed());
 
-fetch('./kanji.json')
+fetch('./assets/kanji.json')
     .then(res => res.json())
     .then(data => {
     const keys = Object.keys(data);
