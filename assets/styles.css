@@ -735,6 +735,10 @@ html {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .contenido_flex.socials {
+        display: flex;
+    }
+
     .bloque {
         width: 100%;
     }
