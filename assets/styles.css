@@ -575,6 +575,18 @@ html {
     width: 40rem;
 }
 
+.bloque.gold {
+    background-color: rgba(230, 198, 25, 0.5);
+}
+
+.bloque.silver {
+    background-color: rgba(191, 193, 193, 0.5);
+}
+
+.bloque.bronze {
+    background-color: rgba(190, 127, 66, 0.5);
+}
+
 .bloque_hidden {
     padding: 1.2rem;
     color: white;
@@ -668,14 +680,15 @@ html {
 }
 
 .bloque_txt.titulo {
-    min-width: 200px;
+    min-width: 400px;
     margin-left: 1.5rem;
     margin-right: 0.5rem;
 }
 
 .bloque_txt.boton {
+    max-width: 5px;
     align-items: center;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     gap: 1rem;
 }
 
