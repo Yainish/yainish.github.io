@@ -79,37 +79,382 @@
                 </div>
             </div>
         </div>
+
         <div class="contenido_contenido_grid">
             <div class="contenido_grid" id="grid1">
                 <div class="bloque">
-                    <div class="bloque_txt centrado_grid">
-                        <h2>Thing1</h2>
+                    <div class="bloque_txt centrado_grid clickable">
+                        <h2 onclick="games_switch()">Games</h2>
                     </div>
                 </div>
-                <div class="bloque">
-                    <div class="bloque_txt centrado_grid">
-                        <h2>Thing2</h2>
+
+                <div class="bloque" id="gr1_overlap1">
+                    <div class="bloque_overlap" id="gr1_bl2">
+                        <div class="bloque_txt centrado_grid clickable">
+                            <h2 onclick="grid5_switch()">Anime</h2>
+                        </div>
+                    </div>
+
+                    <div class="bloque_overlap" id="gr1_bl2_2">
+                        <div class="bloque_txt centrado_grid clickable">
+                            <h2 onclick="grid3_switch()">Visual Novels</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="bloque">
-                    <div class="bloque_txt centrado_grid">
-                        <h2>Thing3</h2>
+
+                <div class="bloque" id="gr1_overlap2">
+                    <div class="bloque_overlap" id="gr1_bl3">
+                        <div class="bloque_txt centrado_grid clickable">
+                            <h2 onclick="grid6_switch()">Music</h2>
+                        </div>
+                    </div>
+
+                    <div class="bloque_overlap" id="gr1_bl3_2">
+                        <div class="bloque_txt centrado_grid clickable">
+                            <h2 onclick="grid4_switch()">Other Games</h2>
+                        </div>
                     </div>
                 </div>
             </div>
+            
             <div class="contenido_grid" id="grid2">
-                <div class="bloque_hidden">
-                </div>
-                <div class="bloque_hidden">
-                </div>
+                <div class="bloque_hidden"></div>
+                <div class="bloque_hidden"></div>
                 <div class="bloque">
-                    <div class="bloque_txt centrado_grid">
-                        <h2>Thing4</h2>
+                    <div class="bloque_txt centrado_grid clickable">
+                        <h2 onclick="grid7_switch()">My Socials</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    
+    <div class="contenido_contenido_grid closer">
+
+        <div class="contenido_grid closer" id="grid3">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/chaoschild.jpg" alt="Chaos;Child">
+                            <div class="bloque_txt">
+                                <h2>Chaos;Child</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid4">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/terraria.png" alt="Terraria">
+                            <div class="bloque_txt">
+                                <h2>Terraria</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid5">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/monogatari.jpeg" alt="Monogatari">
+                            <div class="bloque_txt">
+                                <h2>Monogatari</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid6">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/icdd.jpeg" alt="ICDD">
+                            <div class="bloque_txt">
+                                <h2>Imperial Circus Dead Decadence</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid7">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://discord.com/users/458946614732652554" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/discord.png" alt="Discord">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://x.com/Yainish87" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/twitter.png" alt="Twitter">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://steamcommunity.com/id/yainish/" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/steam.png" alt="Steam">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://myanimelist.net/profile/Yainish" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/mal.png" alt="MAL">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://vndb.org/u308256" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/vndb.png" alt="VNDB">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://open.spotify.com/user/uc89h25bvxr1oullvvdv8v533" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/spotify.png" alt="Spotify">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://osu.ppy.sh/users/15842056" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/osu_.png" alt="osu!">
+                            </a>
+                        </div>
+                        <div class="bloque_hidden nogrow nopadding">
+                            <a rel="noopener" href="https://github.com/Yainish" target="_blank">
+                                <img class="bloque_img social" src="./assets/imgs/grids/github.png" alt="Github">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div class="contenido_contenido_grid">
+
+        <div class="contenido_grid closer" id="grid3_2">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/chaoshead.jpg" alt="Chaos;Head">
+                            <div class="bloque_txt">
+                                <h2>Chaos;Head</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid4_2">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/majsoul.jpg" alt="Mahjong Soul">
+                            <div class="bloque_txt">
+                                <h2>Mahjong Soul</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid5_2">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/pingpong.jpg" alt="Ping Pong">
+                            <div class="bloque_txt">
+                                <h2>Ping Pong</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid6_2">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/undead.jpg" alt="UNDEAD CORPORATION">
+                            <div class="bloque_txt">
+                                <h2>UNDEAD CORPORATION</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenido_contenido_grid closer">
+
+        <div class="contenido_grid closer" id="grid3_3">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/higurashi.jpg" alt="Higurashi no Naku Koro ni">
+                            <div class="bloque_txt">
+                                <h2>Higurashi no Naku Koro ni</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid4_3">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/osu.png" alt="osu!">
+                            <div class="bloque_txt">
+                                <h2>osu!</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid5_3">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/madoka.jpg" alt="Madoka Magica">
+                            <div class="bloque_txt">
+                                <h2>Madoka Magica</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid6_3">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/fes.jpg" alt="FES">
+                            <div class="bloque_txt">
+                                <h2>FES</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="contenido_contenido_grid">
+
+        <div class="contenido_grid closer" id="grid4_4">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/yakuza.png" alt="Yakuza">
+                            <div class="bloque_txt">
+                                <h2>Yakuza</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid5_4">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/kagejitsu.png" alt="TEIS">
+                            <div class="bloque_txt">
+                                <h2>The Eminence in Shadow</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid6_4">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/santamasakari.jpg" alt="SANTA MASSACRE">
+                            <div class="bloque_txt">
+                                <h2>SANTA MASSACRE</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="contenido_contenido_grid closer">
+
+        <div class="contenido_grid closer" id="grid4_5">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/persona.png" alt="Persona">
+                            <div class="bloque_txt">
+                                <h2>Persona</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido_grid closer" id="grid5_5">
+            <div class="centrado closer">
+                <div class="centrado closer">
+                    <div class="contenido_flex">
+                        <div class="bloque fixed">
+                            <img class="bloque_img" src="./assets/imgs/grids/saki.jpg" alt="Saki">
+                            <div class="bloque_txt">
+                                <h2>Saki</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
     <script src="./assets/script.js"> </script>
 </body>
 </html>

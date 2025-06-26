@@ -93,14 +93,79 @@ audio.addEventListener("play", display_pause);
 audio.addEventListener("pause", display_play);
 audio.addEventListener("ended", cancion_random);
 
+const grid1 = document.getElementById("grid1");
+const grid2 = document.getElementById("grid2");
+
+const grid3 = document.getElementById("grid3");
+const grid3_2 = document.getElementById("grid3_2");
+const grid3_3 = document.getElementById("grid3_3");
+
+const grid4 = document.getElementById("grid4");
+const grid4_2 = document.getElementById("grid4_2");
+const grid4_3 = document.getElementById("grid4_3");
+const grid4_4 = document.getElementById("grid4_4");
+const grid4_5 = document.getElementById("grid4_5");
+
+const grid5 = document.getElementById("grid5");
+const grid5_2 = document.getElementById("grid5_2");
+const grid5_3 = document.getElementById("grid5_3");
+const grid5_4 = document.getElementById("grid5_4");
+const grid5_5 = document.getElementById("grid5_5");
+
+const grid6 = document.getElementById("grid6");
+const grid6_2 = document.getElementById("grid6_2");
+const grid6_3 = document.getElementById("grid6_3");
+const grid6_4 = document.getElementById("grid6_4");
+
+const grid7 = document.getElementById("grid7");
+
+const gr1_bl2 = document.getElementById("gr1_bl2");
+const gr1_bl3 = document.getElementById("gr1_bl3");
+
+const gr1_bl2_2 = document.getElementById("gr1_bl2_2");
+const gr1_bl3_2 = document.getElementById("gr1_bl3_2");
+
+gr1_bl2.classList.add("display");
+gr1_bl3.classList.add("display");
+
 function grid1_switch() {
-    const grid1 = document.getElementById("grid1");
     if (!(grid1.classList.contains("display"))) {
+        gr1_bl2.classList.add("display");
+        gr1_bl3.classList.add("display");
+
         grid1.classList.add("display");
-        document.getElementById("grid2").classList.remove("display");
+        grid2.classList.remove("display");
+
+        grid7.classList.remove("display");
     }
-    else
+    else {
+        grid3.classList.remove("display");
+        grid3_2.classList.remove("display");
+        grid3_3.classList.remove("display");
+        grid4.classList.remove("display");
+        grid4_2.classList.remove("display");
+        grid4_3.classList.remove("display");
+        grid4_4.classList.remove("display");
+        grid4_5.classList.remove("display");
+
         grid1.classList.remove("display");
+
+        gr1_bl2_2.classList.remove("display");
+        gr1_bl3_2.classList.remove("display");
+
+        gr1_bl2.classList.remove("display");
+        gr1_bl3.classList.remove("display");
+
+        grid5.classList.remove("display");
+        grid5_2.classList.remove("display");
+        grid5_3.classList.remove("display");
+        grid5_4.classList.remove("display");
+        grid5_5.classList.remove("display");
+        grid6.classList.remove("display");
+        grid6_2.classList.remove("display");
+        grid6_3.classList.remove("display");
+        grid6_4.classList.remove("display");
+    }
     
     /*grid.classList.toggle("display");*/
 
@@ -113,13 +178,157 @@ function grid1_switch() {
 }
 
 function grid2_switch() {
-    const grid2 = document.getElementById("grid2");
     if (!(grid2.classList.contains("display"))) {
+        grid3.classList.remove("display");
+        grid3_2.classList.remove("display");
+        grid3_3.classList.remove("display");
+        grid4.classList.remove("display");
+        grid4_2.classList.remove("display");
+        grid4_3.classList.remove("display");
+        grid4_4.classList.remove("display");
+        grid4_5.classList.remove("display");
+        
         grid2.classList.add("display");
-        document.getElementById("grid1").classList.remove("display");
+        grid1.classList.remove("display");
+        gr1_bl2_2.classList.remove("display");
+        gr1_bl3_2.classList.remove("display");
+
+        grid5.classList.remove("display");
+        grid5_2.classList.remove("display");
+        grid5_3.classList.remove("display");
+        grid5_4.classList.remove("display");
+        grid5_5.classList.remove("display");
+        grid6.classList.remove("display");
+        grid6_2.classList.remove("display");
+        grid6_3.classList.remove("display");
+        grid6_4.classList.remove("display");
     }
-    else
+    else {
         grid2.classList.remove("display");
+        grid7.classList.remove("display");
+    }
+}
+
+function games_switch() {
+    if (gr1_bl2.classList.contains("display")) {
+        gr1_bl2.classList.remove("display");
+        gr1_bl3.classList.remove("display");
+        gr1_bl2_2.classList.add("display");
+        gr1_bl3_2.classList.add("display");
+
+        grid5.classList.remove("display");
+        grid5_2.classList.remove("display");
+        grid5_3.classList.remove("display");
+        grid5_4.classList.remove("display");
+        grid5_5.classList.remove("display");
+        grid6.classList.remove("display");
+        grid6_2.classList.remove("display");
+        grid6_3.classList.remove("display");
+        grid6_4.classList.remove("display");
+    }
+    else {
+        grid3.classList.remove("display");
+        grid3_2.classList.remove("display");
+        grid3_3.classList.remove("display");
+        grid4.classList.remove("display");
+        grid4_2.classList.remove("display");
+        grid4_3.classList.remove("display");
+        grid4_4.classList.remove("display");
+        grid4_5.classList.remove("display");
+
+        gr1_bl2_2.classList.remove("display");
+        gr1_bl3_2.classList.remove("display");
+        gr1_bl2.classList.add("display");
+        gr1_bl3.classList.add("display");
+    }
+}
+
+function grid3_switch() {
+    if (!(grid3.classList.contains("display"))) {
+        grid3.classList.add("display");
+        grid3_2.classList.add("display");
+        grid3_3.classList.add("display");
+        grid4.classList.remove("display");
+        grid4_2.classList.remove("display");
+        grid4_3.classList.remove("display");
+        grid4_4.classList.remove("display");
+        grid4_5.classList.remove("display");
+    }
+    else {
+        grid3.classList.remove("display");
+        grid3_2.classList.remove("display");
+        grid3_3.classList.remove("display");
+    }
+}
+
+function grid4_switch() {
+    if (!(grid4.classList.contains("display"))) {
+        grid4.classList.add("display");
+        grid4_2.classList.add("display");
+        grid4_3.classList.add("display");
+        grid4_4.classList.add("display");
+        grid4_5.classList.add("display");
+        grid3.classList.remove("display");
+        grid3_2.classList.remove("display");
+        grid3_3.classList.remove("display");
+    }
+    else {
+        grid4.classList.remove("display");
+        grid4_2.classList.remove("display");
+        grid4_3.classList.remove("display");
+        grid4_4.classList.remove("display");
+        grid4_5.classList.remove("display");
+    }
+}
+
+function grid5_switch() {
+    if (!(grid5.classList.contains("display"))) {
+        grid5.classList.add("display");
+        grid5_2.classList.add("display");
+        grid5_3.classList.add("display");
+        grid5_4.classList.add("display");
+        grid5_5.classList.add("display");
+        grid6.classList.remove("display");
+        grid6_2.classList.remove("display");
+        grid6_3.classList.remove("display");
+        grid6_4.classList.remove("display");
+    }
+    else {
+        grid5.classList.remove("display");
+        grid5_2.classList.remove("display");
+        grid5_3.classList.remove("display");
+        grid5_4.classList.remove("display");
+        grid5_5.classList.remove("display");
+    }
+}
+
+function grid6_switch() {
+    if (!(grid6.classList.contains("display"))) {
+        grid6.classList.add("display");
+        grid6_2.classList.add("display");
+        grid6_3.classList.add("display");
+        grid6_4.classList.add("display");
+        grid5.classList.remove("display");
+        grid5_2.classList.remove("display");
+        grid5_3.classList.remove("display");
+        grid5_4.classList.remove("display");
+        grid5_5.classList.remove("display");
+    }
+    else {
+        grid6.classList.remove("display");
+        grid6_2.classList.remove("display");
+        grid6_3.classList.remove("display");
+        grid6_4.classList.remove("display");
+    }
+}
+
+function grid7_switch() {
+    if (!(grid7.classList.contains("display"))) {
+        grid7.classList.add("display");
+    }
+    else {
+        grid7.classList.remove("display");
+    }
 }
 
 function xmur3(str) {
