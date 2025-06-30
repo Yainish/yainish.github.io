@@ -400,6 +400,10 @@ function grid1_switch() {
         grid2.classList.remove("display");
 
         grid7.classList.remove("display");
+
+        setTimeout(() => {
+            grid1.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
     }
     else {
         grid3.classList.remove("display");
@@ -465,6 +469,10 @@ function grid2_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+
+        setTimeout(() => {
+            grid2.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
     }
     else {
         grid2.classList.remove("display");
