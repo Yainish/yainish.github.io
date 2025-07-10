@@ -368,6 +368,7 @@ const grid4_2 = document.getElementById("grid4_2");
 const grid4_3 = document.getElementById("grid4_3");
 const grid4_4 = document.getElementById("grid4_4");
 const grid4_5 = document.getElementById("grid4_5");
+const grid4_6 = document.getElementById("grid4_6");
 
 const grid5 = document.getElementById("grid5");
 const grid5_2 = document.getElementById("grid5_2");
@@ -414,6 +415,7 @@ function grid1_switch() {
         grid4_3.classList.remove("display");
         grid4_4.classList.remove("display");
         grid4_5.classList.remove("display");
+        grid4_6.classList.remove("display");
 
         grid1.classList.remove("display");
 
@@ -454,6 +456,7 @@ function grid2_switch() {
         grid4_3.classList.remove("display");
         grid4_4.classList.remove("display");
         grid4_5.classList.remove("display");
+        grid4_6.classList.remove("display");
         
         grid2.classList.add("display");
         grid1.classList.remove("display");
@@ -506,6 +509,7 @@ function games_switch() {
         grid4_3.classList.remove("display");
         grid4_4.classList.remove("display");
         grid4_5.classList.remove("display");
+        grid4_6.classList.remove("display");
 
         gr1_bl2_2.classList.remove("display");
         gr1_bl3_2.classList.remove("display");
@@ -524,6 +528,7 @@ function grid3_switch() {
         grid4_3.classList.remove("display");
         grid4_4.classList.remove("display");
         grid4_5.classList.remove("display");
+        grid4_6.classList.remove("display");
     }
     else {
         grid3.classList.remove("display");
@@ -539,6 +544,7 @@ function grid4_switch() {
         grid4_3.classList.add("display");
         grid4_4.classList.add("display");
         grid4_5.classList.add("display");
+        grid4_6.classList.add("display");
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
@@ -549,6 +555,7 @@ function grid4_switch() {
         grid4_3.classList.remove("display");
         grid4_4.classList.remove("display");
         grid4_5.classList.remove("display");
+        grid4_6.classList.remove("display");
     }
 }
 

@@ -144,6 +144,19 @@
     pointer-events: auto;
 }
 
+#grid4_6 {
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#grid4_6.display {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 #grid5 {
     opacity: 0;
     transform: translateY(20px);
