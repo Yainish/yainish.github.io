@@ -356,6 +356,47 @@ audio.addEventListener("play", display_pause);
 audio.addEventListener("pause", display_play);
 audio.addEventListener("ended", cancion_random);
 
+
+var flag_scroll;
+const flag_scroll_img = document.getElementById("flag_scroll_switch_img");
+
+if (localStorage.getItem('flag_scroll') === null)
+    localStorage.setItem('flag_scroll', 1);
+else
+    flag_scroll = localStorage.getItem('flag_scroll');
+
+function flag_scroll_switch() {
+    if (flag_scroll === '0') {
+        localStorage.setItem('flag_scroll', 1);
+        flag_scroll_img.src = "./assets/imgs/on.png";
+    }
+    else {
+        localStorage.setItem('flag_scroll', 0);
+        flag_scroll_img.src = "./assets/imgs/off.png";
+    }
+    flag_scroll = localStorage.getItem('flag_scroll');
+}
+
+if (flag_scroll === '0')
+        flag_scroll_img.src = "./assets/imgs/off.png";
+
+const settings = document.getElementById("settings_panel");
+const settings_close = document.getElementById("settings_close");
+const settings_wheel = document.getElementById("settings_wheel");
+
+function settings_switch() {
+    if (!(settings.classList.contains("display"))) {
+        settings.classList.add("display");
+        settings_close.classList.add("display");
+        settings_wheel.classList.remove("display");
+    }
+    else {
+        settings.classList.remove("display");
+        settings_close.classList.remove("display");
+        settings_wheel.classList.add("display");
+    }
+}
+
 const grid1 = document.getElementById("grid1");
 const grid2 = document.getElementById("grid2");
 
@@ -402,9 +443,10 @@ function grid1_switch() {
 
         grid7.classList.remove("display");
 
-        setTimeout(() => {
-            grid1.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 50);
+        if (flag_scroll === '1')
+            setTimeout(() => {
+                grid1.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 50);
     }
     else {
         grid3.classList.remove("display");
@@ -473,9 +515,10 @@ function grid2_switch() {
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
 
-        setTimeout(() => {
-            grid2.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 50);
+        if (flag_scroll === '1')
+            setTimeout(() => {
+                grid2.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 50);
     }
     else {
         grid2.classList.remove("display");

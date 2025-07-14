@@ -8,6 +8,30 @@
     <link rel="icon" href="./assets/imgs/favicon.ico" type="image/x-icon">
 </head>
 <body class="main_bg">
+
+    <div id="settings_wheel" class="settings_wheel display">
+        <div class="cancion_boton">
+            <img class="boton_img settings" src="./assets/imgs/settings.png" alt="Settings" onclick="settings_switch()">
+        </div>
+    </div>
+
+    <div id="settings_panel" class="settings_panel">
+        <div class="bloque settings_div">
+            <div class="bloque_txt settings_block">
+                <div class="bloque_hidden nogrow clickable">
+                    <img id="flag_scroll_switch_img" class="boton_img" src="./assets/imgs/on.png" alt="Box" onclick="flag_scroll_switch()">
+                    <h2 onclick="flag_scroll_switch()">Auto Scroll</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings_close" class="settings_close">
+        <div class="cancion_boton">
+            <img class="boton_img" src="./assets/imgs/settings_close.png" alt="Close" onclick="settings_switch()">
+        </div>
+    </div>
+
     <div class="centrado">
         <div class="banner" id="banner">
             <img class="pfp" src="./assets/imgs/pfp.jpg" alt="Profile Pic">

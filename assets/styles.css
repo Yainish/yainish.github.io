@@ -14,6 +14,18 @@
     display: none;
 }
 
+#gr1_overlap1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#gr1_overlap2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .ngrid {
     opacity: 0;
     transform: translateY(20px);
@@ -25,18 +37,6 @@
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-}
-
-#gr1_overlap1 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#gr1_overlap2 {
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .bloque_overlap {
@@ -328,6 +328,19 @@ html {
     width: 40rem;
 }
 
+.bloque.settings_div {
+    height: 500px;
+    width: 27rem;
+    background-color: rgba(40, 40, 40, 0.7);
+
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 0;
+
+    height: auto;
+}
+
 .bloque.gold {
     background-color: rgba(230, 198, 25, 0.5);
 }
@@ -371,6 +384,10 @@ html {
 
 .bloque_hidden.column {
     flex-direction: column;
+}
+
+.bloque_hidden.clickable {
+    cursor: pointer;
 }
 
 .bloque_hidden_nosides {
@@ -449,6 +466,11 @@ html {
     cursor: pointer;
 }
 
+.bloque_txt.settings_block {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .cancion_boton {
     display: flex;
     justify-content: center;
@@ -464,6 +486,10 @@ html {
     flex-shrink: 0;
 }
 
+.boton_img.settings {
+    width: 40px;
+}
+
 .nomargin_updown {
     margin-top: 0;
     margin-bottom: 0;
@@ -477,6 +503,67 @@ html {
     margin-block-start: 0;
     font-size: 250%;
     text-decoration: none;
+}
+
+.settings_wheel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: auto;
+    height: auto;
+
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.settings_wheel.display {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.settings_close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: auto;
+    height: auto;
+
+    top: 35px;
+    right: 35px;
+
+    z-index: 1;
+
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.settings_close.display {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.settings_panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.settings_panel.display {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
 }
 
 /*
