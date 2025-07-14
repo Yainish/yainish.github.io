@@ -357,7 +357,7 @@ audio.addEventListener("pause", display_play);
 audio.addEventListener("ended", cancion_random);
 
 
-var flag_scroll;
+var flag_scroll = '1';
 const flag_scroll_img = document.getElementById("flag_scroll_switch_img");
 
 if (localStorage.getItem('flag_scroll') === null)
