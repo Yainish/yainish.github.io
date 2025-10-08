@@ -161,6 +161,10 @@ html {
     /*will-change: transform, filter;*/
 }
 
+.main_bg.alt::before {
+    background-image: url(./imgs/hecatia_bg.jpg);
+}
+
 .main_bg::after {
     content: "";
     position: fixed;
@@ -315,6 +319,10 @@ html {
     min-height: 158.38px;
 }
 
+.bloque.read {
+    min-width: 30rem;
+}
+
 .bloque.reproductor {
     gap: 0;
 }
@@ -380,6 +388,14 @@ html {
     padding: 0;
     gap: 0;
     flex-basis: auto;
+}
+
+.bloque_hidden.nogrow.nopaddingdown {
+    padding-bottom: 0;
+}
+
+.bloque_hidden.nogrow.nopaddingup {
+    padding-top: 0;
 }
 
 .bloque_hidden.column {

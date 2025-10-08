@@ -380,6 +380,35 @@ function flag_scroll_switch() {
 if (flag_scroll === '0')
         flag_scroll_img.src = "./assets/imgs/off.png";
 
+
+var flag_wallpaper = '0';
+const flag_wallpaper_img = document.getElementById("flag_wallpaper_switch_img");
+const mainBg = document.querySelector(".main_bg");
+
+if (localStorage.getItem('flag_wallpaper') === null)
+    localStorage = localStorage.setItem('flag_wallpaper', 0);
+else
+    flag_wallpaper = localStorage.getItem('flag_wallpaper');
+
+function flag_wallpaper_switch() {
+    if (flag_wallpaper === '0') {
+        localStorage.setItem('flag_wallpaper', 1);
+        flag_wallpaper_img.src = "./assets/imgs/on.png";
+    }
+    else {
+        localStorage.setItem('flag_wallpaper', 0);
+        flag_wallpaper_img.src = "./assets/imgs/off.png";
+    }
+    flag_wallpaper = localStorage.getItem('flag_wallpaper');
+    mainBg.classList.toggle('alt');
+}
+
+if (flag_wallpaper === '1') {
+    flag_wallpaper_switch_img.src = "./assets/imgs/on.png";
+    mainBg.classList.toggle('alt');
+}
+
+
 const settings = document.getElementById("settings_panel");
 const settings_close = document.getElementById("settings_close");
 const settings_wheel = document.getElementById("settings_wheel");
