@@ -384,6 +384,7 @@ if (flag_scroll === '0')
 var flag_wallpaper = '0';
 const flag_wallpaper_img = document.getElementById("flag_wallpaper_switch_img");
 const mainBg = document.querySelector(".main_bg");
+const nombre = document.querySelector(".nombre");
 
 if (localStorage.getItem('flag_wallpaper') === null)
     localStorage = localStorage.setItem('flag_wallpaper', 0);
@@ -401,11 +402,13 @@ function flag_wallpaper_switch() {
     }
     flag_wallpaper = localStorage.getItem('flag_wallpaper');
     mainBg.classList.toggle('alt');
+    nombre.classList.toggle('alt');
 }
 
 if (flag_wallpaper === '1') {
     flag_wallpaper_switch_img.src = "./assets/imgs/on.png";
     mainBg.classList.toggle('alt');
+    nombre.classList.toggle('alt');
 }
 
 
