@@ -31,7 +31,7 @@ const songs = [
         image: "./assets/imgs/covers/th06.jpg"
     },
 
-    /* PCB */
+    /* PCB / Perfect Cherry Blossom / Process Control Block / Printed Circuit Board */
     {
         name: "The Capital City of Flowers in the Sky",
         file: "https://www.dropbox.com/scl/fi/sf8tp44lj5g5yme2gwuhc/08-The-Capital-City-of-Flowers-in-the-Sky.flac?rlkey=y5uh081k21k5carnvp099gug0&st=oofso4rr&dl=1",
@@ -435,6 +435,7 @@ const grid2 = document.getElementById("grid2");
 const grid3 = document.getElementById("grid3");
 const grid3_2 = document.getElementById("grid3_2");
 const grid3_3 = document.getElementById("grid3_3");
+const grid3_4 = document.getElementById("grid3_4");
 
 const grid4 = document.getElementById("grid4");
 const grid4_2 = document.getElementById("grid4_2");
@@ -453,6 +454,9 @@ const grid6 = document.getElementById("grid6");
 const grid6_2 = document.getElementById("grid6_2");
 const grid6_3 = document.getElementById("grid6_3");
 const grid6_4 = document.getElementById("grid6_4");
+const grid6_5 = document.getElementById("grid6_5");
+const grid6_6 = document.getElementById("grid6_6");
+const grid6_7 = document.getElementById("grid6_7");
 
 const grid7 = document.getElementById("grid7");
 
@@ -484,6 +488,7 @@ function grid1_switch() {
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
+        grid3_4.classList.remove("display");
         grid4.classList.remove("display");
         grid4_2.classList.remove("display");
         grid4_3.classList.remove("display");
@@ -508,6 +513,9 @@ function grid1_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+        grid6_5.classList.remove("display");
+        grid6_6.classList.remove("display");
+        grid6_7.classList.remove("display");
     }
     
     /*grid.classList.toggle("display");*/
@@ -525,6 +533,7 @@ function grid2_switch() {
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
+        grid3_4.classList.remove("display");
         grid4.classList.remove("display");
         grid4_2.classList.remove("display");
         grid4_3.classList.remove("display");
@@ -546,6 +555,9 @@ function grid2_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+        grid6_5.classList.remove("display");
+        grid6_6.classList.remove("display");
+        grid6_7.classList.remove("display");
 
         if (flag_scroll === '1')
             setTimeout(() => {
@@ -574,11 +586,15 @@ function games_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+        grid6_5.classList.remove("display");
+        grid6_6.classList.remove("display");
+        grid6_7.classList.remove("display");
     }
     else {
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
+        grid3_4.classList.remove("display");
         grid4.classList.remove("display");
         grid4_2.classList.remove("display");
         grid4_3.classList.remove("display");
@@ -598,6 +614,7 @@ function grid3_switch() {
         grid3.classList.add("display");
         grid3_2.classList.add("display");
         grid3_3.classList.add("display");
+        grid3_4.classList.add("display");
         grid4.classList.remove("display");
         grid4_2.classList.remove("display");
         grid4_3.classList.remove("display");
@@ -609,6 +626,7 @@ function grid3_switch() {
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
+        grid3_4.classList.remove("display");
     }
 }
 
@@ -623,6 +641,7 @@ function grid4_switch() {
         grid3.classList.remove("display");
         grid3_2.classList.remove("display");
         grid3_3.classList.remove("display");
+        grid3_4.classList.remove("display");
     }
     else {
         grid4.classList.remove("display");
@@ -645,6 +664,9 @@ function grid5_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+        grid6_5.classList.remove("display");
+        grid6_6.classList.remove("display");
+        grid6_7.classList.remove("display");
     }
     else {
         grid5.classList.remove("display");
@@ -661,6 +683,9 @@ function grid6_switch() {
         grid6_2.classList.add("display");
         grid6_3.classList.add("display");
         grid6_4.classList.add("display");
+        grid6_5.classList.add("display");
+        grid6_6.classList.add("display");
+        grid6_7.classList.add("display");
         grid5.classList.remove("display");
         grid5_2.classList.remove("display");
         grid5_3.classList.remove("display");
@@ -672,6 +697,9 @@ function grid6_switch() {
         grid6_2.classList.remove("display");
         grid6_3.classList.remove("display");
         grid6_4.classList.remove("display");
+        grid6_5.classList.remove("display");
+        grid6_6.classList.remove("display");
+        grid6_7.classList.remove("display");
     }
 }
 
